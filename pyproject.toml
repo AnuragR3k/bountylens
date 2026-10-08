@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bountylens"
+version = "0.1.0"
+description = "Bug bounty reconnaissance and triage assistant"
+requires-python = ">=3.10"
+
+dependencies = [
+    "typer",
+    "rich",
+    "pydantic",
+    "httpx"
+]
+
+[project.scripts]
+bountylens = "bountylens.cli:app"
